@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Basic calculator</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="cal-container">
+        <div class="cal-display" id="cal-display">0</div>
+        <div class="cal-buttons">
+            <button oneclick="clearDisplay()">AC</button>
+            <button oneclick="deleteLast()">DEL</button>
+            <button oneclick="appendValue('%')">%</button>
+            <button oneclick="appendValue('/')">÷</button>
+
+            <button oneclick="appendValue('7')">7</button>
+            <button oneclick="appendValue('8')">8</button>
+            <button oneclick="appendValue('9')">9</button>
+            <button oneclick="appendValue('+')">+</button>
+
+            <button oneclick="appendValue('4')">4</button>
+            <button oneclick="appendValue('5')">5</button>
+            <button oneclick="appendValue('6')">6</button>
+            <button oneclick="appendValue('-')">-</button>
+
+            <button oneclick="appendValue('1')">1</button>
+            <button oneclick="appendValue('2')">2</button>
+            <button oneclick="appendValue('3')">3</button>
+            <button oneclick="appendValue('*')">*</button>
+
+            <button oneclick="appendValue('0')"class="span-two">0</button>
+            <button oneclick="appendValue('.')">.</button>
+            <button oneclick="calculate()">=</button>
+        </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
